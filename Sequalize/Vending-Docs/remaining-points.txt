@@ -1,0 +1,32 @@
+get-all-vendors
+get-all-manager
+get-counts inactiveitem is object object
+
+bill/payment token base krun add paid_by_id
+
+bill/logs  paid-by-user name and role
+
+NEW ENDPOINTS
+
+
+/dispensed item count
+[
+  {
+   Date:2022-01-22
+   Count:1
+  },
+  {
+   Date:2022-01-22
+   Count:0
+  }
+]
+
+//popular machine by dispensed items
+[
+ {
+   Machineid:111
+   Location:abc
+   dispensedItems:1
+ }
+]
+

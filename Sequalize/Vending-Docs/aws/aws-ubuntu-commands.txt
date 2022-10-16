@@ -1,0 +1,15 @@
+
+# commands to update instance
+sudo apt-get update
+
+# to install node js
+#
+sudo apt-get install curl
+#
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
+#
+sudo apt-get install -y nodejs
+#
+// to install npm if it is not installed
+#
+sudo apt install npm

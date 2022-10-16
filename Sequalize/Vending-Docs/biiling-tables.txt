@@ -1,0 +1,29 @@
+price =>user
+
+
+jb item update 0r add hoga
+
+qty * vendor_price
+  5 *100=500
+
+
+
+
+
+
+
+Vendor Billing
+
+ id vendor_id      paid_amount     total_amount        created_at    updated_at
+    
+ 1    1001            300           100-300=700
+
+Billing_log
+
+ billing_id  vendor_id        amount   action   created_at updated_at
+
+     1          500      added    
+     1          500      added
+     1          300      300 
+
+     

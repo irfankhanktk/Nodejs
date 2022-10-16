@@ -1,0 +1,181 @@
+POST  http://localhost:3000/api/customer/add
+Content-Type: application/json
+
+{
+    "email":"anas2@yopmail.com",
+    "name":"anas",
+    "password":"12345678"
+}
+###
+POST  http://localhost:3000/api/people/login
+Content-Type: application/json
+
+{
+    "email":"anasfarooqi@yopmail.com",
+    "password":"12345678"
+}
+###
+GET https://bellatrixtechnologies.info/api/people
+
+
+###
+
+GET http://localhost:3000/api/people/2
+
+###
+
+PUT  http://localhost:3000/api/people/update/3
+Content-Type: application/json
+
+{
+    "name":"Muhammad Anas Farooqi"
+}
+
+###
+
+DELETE http://localhost:3000/api/people/2
+
+
+
+
+//add restaurant
+
+###
+
+POST  http://localhost:3000/api/restaurant/add
+Content-Type: application/json
+
+{
+    "email": "sharetea.limbang@gmail.com",
+    "name": "ShareTea Limbang",
+    "phone": "+601118519999",
+    "cityId": 1,
+    "address": "Ground Floor, Lot 41, Jalan Wong Tsap En Limbang",
+    "img": "https://galorefood.com/admin/upload/user/1611789243296.png",
+    "password": "123456",
+    "minCartValue": "",
+    "deliveryCharges": "5",
+    "openingTime": "10:00",
+    "closingTime": "20:00",
+    "trending": 1,
+    "deliveryTime": "40",
+    "personCost": "5",
+    "lat": "4.74067733844074",
+    "lng": "114.99923913139634",
+    "open": false,
+    "type": "Bubble Tea Shop",
+    "commissionType": 0,
+    "commissionValue": ""
+}
+
+# {
+#     "email":"sharetea.limbang@gmail.com",
+#     "name":"ShareTea Limbang",
+#     "phone":"923047007718",
+#     "cityId":1,
+#     "address":"chadni chowk, rawalpindi",
+#     "img":"",
+#     "password":"123456",
+#     "minCartValue":"",
+#     "deliveryCharges":"5",
+#     "openingTime":"10:00",
+#     "closingTime":"20:00",
+#     "trending":"0",
+#     "deliveryTime":"40",
+#     "personCost":"5",
+#     "lat":"33.452",
+#     "lng":"72.435",
+#     "open":"0",
+#     "type":"",
+#     "commissionType":0,
+#     "commissionValue":""
+# }
+
+###
+
+POST  https://api.galorefood.com/api/cities/add
+Content-Type: application/json
+
+{
+    "name":"Limbang",
+    "status":true
+}
+
+###
+
+GET http://localhost:3000/api/cities/findAll
+
+###
+PUT  http://localhost:3000/api/cities/update/1
+Content-Type: application/json
+
+{
+    "status":false
+}
+
+###
+DELETE  http://localhost:3000/api/cities/delete/1
+
+###
+
+DELETE  http://localhost:3000/api/cities/deleteAll
+
+
+
+###
+
+POST https://api.galorefood.com/api/restaurant/menuItem/add
+Content-Type: application/json
+
+{
+    "catId":1,
+    "storeId":1,
+    "name":"Menu number 1",
+    "description":"this is first menu to add please don't send back an error.",
+    "isVeg":false,
+    "status":true, 
+    "image":"",
+    "sort_no":1,
+    "quantity":20
+}
+
+
+###
+POST  http://localhost:3000/api/restaurant/categories/add
+{
+    "name":"Pakistani",
+    "isActive":true,
+    "restaurant_id":1,
+    "id":1
+}
+
+
+###
+
+GET http://localhost:3000/api/customer/homePageData/30
+
+###
+GET http://localhost:3000/api/customer/getRestaurantsItems
+
+###
+GET http://localhost:3000/api/customer/findAll
+
+
+###
+POST https://api.galorefood.com/api/rider/add
+{
+    "phoneNumber":"+923047007718",
+"name":"Anas Farooqi    ",
+"password":"12345678",
+"email":"anasfarooqi@yopmail.com"
+}
+
+###
+POST https://api.galorefood.com/api/rider/login
+Content-Type: application/json
+
+{
+    "phoneNumber":"+923047007718",
+"password":"12345678"
+}
+
