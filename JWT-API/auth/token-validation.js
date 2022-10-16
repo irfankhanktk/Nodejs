@@ -1,5 +1,5 @@
 const { verify } = require('jsonwebtoken')
-
+// for commit
 module.exports = {
     checkToken:(req, res, next) => {
         let token = req.get('authorization')
